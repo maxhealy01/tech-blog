@@ -1,1 +1,9 @@
-<div>You are on the homepage</div>
+{{#if posts.length}}
+<section>
+  <h2>Posts</h2>
+  {{#each posts as |post|}}
+  {{> post-info post}}
+  <a href="/post/{{post.id}}" class="edit-link">Edit post</a>
+  {{/each}}
+</section>
+{{/if}}

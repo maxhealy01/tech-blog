@@ -2,6 +2,16 @@
 	box-sizing: border-box;
 }
 
+body {
+	background-color: #53cddf;
+}
+
+header {
+	background-color: #c8add8;
+	width: 100%;
+	margin: 0 0 0 0;
+}
+
 body,
 html {
 	height: 100%;
@@ -13,7 +23,7 @@ html {
 
 a {
 	text-decoration: none;
-	color: #225ca3;
+	color: #673f7f;
 	font-weight: bold;
 	transition: color 0.1s;
 }
@@ -23,7 +33,7 @@ a:hover {
 }
 
 button {
-	background-color: #225ca3;
+	background-color: #673f7f;
 	border: 0;
 	padding: 1%;
 	color: white;
@@ -100,7 +110,7 @@ main {
 	padding: 0;
 	cursor: pointer;
 	text-decoration: none;
-	color: #225ca3;
+	color: #673f7f;
 	font-size: 100%;
 	font-weight: bold;
 	transition: color 0.1s;
@@ -120,29 +130,36 @@ main {
 	background-color: #ff643d;
 }
 
+/* Post styling  */
 .post {
+	border: 1px solid black;
 	margin-bottom: 2%;
 	line-height: 150%;
+	padding: 5px;
+	display: flex;
+	flex-direction: column;
 }
 
-.post .title span {
-	font-style: italic;
-	font-size: 90%;
-	color: #7d7d7d;
+.title {
+	border-bottom: 1px solid coral;
+	display: flex;
+	justify-content: space-between;
 }
 
-.edit-link {
+.title a {
+	padding: 15px 5px 0 0;
+}
+
+.title h5 {
+	padding-right: 10px;
+}
+
+.post .body {
+	flex-grow: 4;
+}
+.title .edit-link {
 	display: block;
 	margin: -1.5% 0 2% 0;
-}
-
-.upvote-btn {
-	background-color: #197d0f;
-	transition: background-color 0.1s;
-}
-
-.upvote-btn:hover {
-	background-color: #1f9c13;
 }
 
 .comment-form {
@@ -178,4 +195,10 @@ footer {
 	justify-content: center;
 	padding: 1%;
 	font-size: 110%;
+}
+
+textarea {
+	width: 30em;
+	height: 10em;
+	padding: 3px 0 0 6px;
 }
